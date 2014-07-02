@@ -25,3 +25,20 @@ jQuery(document).ready(function($) {
 //get streetview here
 var streetView = "http://maps.googleapis.com/maps/api/streetview?size=600x400&" + inputStreet + "," + inputCity + "," + inputState;
 
+//get submit and return
+$(document).on("click", "#button", function(){
+				var img = $("<img>");
+				img.attr("src", streetView);
+				$(tag).append(img);
+
+})
+
+// $(document).on("click", ".team-name", function () {
+// 	$(this).next().toggle();
+// 	var visible = $(this).next().is(":visible");
+// 	if (visible) {
+// 		$(this).parent().removeClass('team-collapsed')
+// 	} else {
+// 		$(this).parent().addClass('team-collapsed')
+// 	}
+// })
