@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
     <title>Streetview and Weather Finder</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
@@ -19,91 +21,95 @@
 <legend>Enter Address</legend>
 
 <!-- Text input-->
-<div class="Street">
-  <label class="control-label" for="Street">Street Address</label>
-  <div class="controls">
-    <input id="Street" name="Street" type="text" placeholder="" class="input-xlarge" required="">
-
+<div class="form-group">
+  <label class="col-md-4 control-label" for="street">Address</label>  
+  <div class="col-md-4">
+  <input id="street" name="street" type="text" placeholder="" class="form-control input-md" required="">
+    
   </div>
 </div>
 
 <!-- Text input-->
-<div class="City">
-  <label class="control-label" for="City">City</label>
-  <div class="controls">
-    <input id="City" name="City" type="text" placeholder="" class="input-xlarge" required="">
-
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" placeholder="" class="form-control input-md" required="">
+    
   </div>
 </div>
 
 <!-- Select Basic -->
-<div class="State">
-  <label class="control-label" for="State">State</label>
-  <div class="controls">
-    <select id="State" name="State" class="input-xlarge">
-      <option>AL</option>
-      <option>AK</option>
-      <option>AZ</option>
-      <option>AR</option>
-      <option>CA</option>
-      <option>CO</option>
-      <option>CT</option>
-      <option>DE</option>
-      <option>FL</option>
-      <option>GA</option>
-      <option>HI</option>
-      <option>ID</option>
-      <option>IL</option>
-      <option>IN</option>
-      <option>IA</option>
-      <option>KS</option>
-      <option>KY</option>
-      <option>LA</option>
-      <option>ME</option>
-      <option>MD</option>
-      <option>MA</option>
-      <option>MI</option>
-      <option>MN</option>
-      <option>MS</option>
-      <option>MO</option>
-      <option>MT</option>
-      <option>NE</option>
-      <option>NV</option>
-      <option>NH</option>
-      <option>NJ</option>
-      <option>NM</option>
-      <option>NY</option>
-      <option>NC</option>
-      <option>ND</option>
-      <option>OH</option>
-      <option>OK</option>
-      <option>OR</option>
-      <option>PA</option>
-      <option>RI</option>
-      <option>SC</option>
-      <option>SD</option>
-      <option>TN</option>
-      <option>TX</option>
-      <option>UT</option>
-      <option>VT</option>
-      <option>VA</option>
-      <option>WA</option>
-      <option>WV</option>
-      <option>WI</option>
-      <option>WY</option>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="state">State</label>
+  <div class="col-md-4">
+    <select id="state" name="state" class="form-control">
+      <option value="">AL</option>
+      <option value="">AK</option>
+      <option value="">AZ</option>
+      <option value="">AR</option>
+      <option value="">CA</option>
+      <option value="">CO</option>
+      <option value="">CT</option>
+      <option value="">DE</option>
+      <option value="">FL</option>
+      <option value="">GA</option>
+      <option value="">HI</option>
+      <option value="">ID</option>
+      <option value="">IL</option>
+      <option value="">IN</option>
+      <option value="">IA</option>
+      <option value="">KS</option>
+      <option value="">KY</option>
+      <option value="">LA</option>
+      <option value="">ME</option>
+      <option value="">MA</option>
+      <option value="">MI</option>
+      <option value="">MN</option>
+      <option value="">MS</option>
+      <option value="">MO</option>
+      <option value="">MT</option>
+      <option value="">NE</option>
+      <option value="">NV</option>
+      <option value="">NH</option>
+      <option value="">NJ</option>
+      <option value="">NM</option>
+      <option value="">NY</option>
+      <option value="">NC</option>
+      <option value="">ND</option>
+      <option value="">OH</option>
+      <option value="">OK</option>
+      <option value="">OR</option>
+      <option value="">PA</option>
+      <option value="">RI</option>
+      <option value="">SC</option>
+      <option value="">SD</option>
+      <option value="">TN</option>
+      <option value="">TX</option>
+      <option value="">UT</option>
+      <option value="">VT</option>
+      <option value="">VA</option>
+      <option value="">WA</option>
+      <option value="">WV</option>
+      <option value="">WI</option>
+      <option value="">WY</option>
     </select>
   </div>
 </div>
 
 <!-- Button -->
-<div class="control-group">
-  <label class="control-label" for="Submit"></label>
-  <div class="controls">
-    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
   </div>
 </div>
 
 </fieldset>
 </form>
+
+
 <script type="text/javascript" src="backend.js"></script>
+
 </body>
+
+</html>
