@@ -22,11 +22,11 @@ jQuery(document).ready(function($) {
 }
 
 //get streetview here
-var streetView = "http://maps.googleapis.com/maps/api/streetview?size=600x400&" + inputStreet + "," + inputCity + "," + inputState;
+// var streetView = "http://maps.googleapis.com/maps/api/streetview?size=600x400&" + inputStreet + "," + inputCity + "," + inputState;
 
 //get submit and return
 $(document).on("click", "#submit", function(){
-var inputStreet = $("#street");
+var inputStreet = $("#street").val();
 var inputState = $("#state").val();
 var inputCity = $("#city").val();
 
