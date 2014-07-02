@@ -3,7 +3,7 @@ var wundergroundKey = "6f37a0fd2391cbcb";
 // var inputStreet = $("#street");
 // var inputState = $("#state").val();
 // var inputCity = $("#city").val();
-var inputUrl = "http://api.wunderground.com/api/" + wundergroundKey + "/geolookup/conditions/q/" + inputState + "/" + inputCity + ".json"
+// var inputUrl = "http://api.wunderground.com/api/" + wundergroundKey + "/geolookup/conditions/q/" + inputState + "/" + inputCity + ".json"
 
 
 //get weather here
