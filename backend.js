@@ -44,9 +44,7 @@ jQuery(document).ready(function($) {
 			var windData = cityWeather['current_observation']['wind_string'];
 
 			modTitleRow.append($('<th>')
-				.text("The current conditions in "))
-			modTitleRow.append($('<th>')
-				.text(location))
+				.text("The current conditions in " + location).attr("colspan", 2))
 			modRowWeather.append($('<td>')
 				.text("Weather: "))
 			modRowWeather.append($('<td>')
