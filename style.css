@@ -9,13 +9,13 @@ h1 {
 
 #streetview img {
 	max-width: 100%;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 #weather {
 	height:400px;
 	padding: 25px;
-}
+	max-width:100%;
+	display: inline;
 
-#weather p {
-	font-size: 18px;
 }
