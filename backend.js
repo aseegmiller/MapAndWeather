@@ -61,15 +61,6 @@ jQuery(document).ready(function($) {
 			modRowWind.append($('<td>')
 				.text(windData))
 
-
-
-			// divMod.append($("<p>")
-			// 	.append("The current conditions in " + location + ":" + theEnd)
-			// 	.append("Weather: " + currentWeather + theEnd)
-			// 	.append("Temperature: " + tempFC + theEnd)
-			// 	.append("Feels like: " + feelsLike + theEnd)
-			// 	.append('Wind: ' + windData)
-			// 	)
 		}
 	});
 });
