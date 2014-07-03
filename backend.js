@@ -21,6 +21,8 @@ var wundergroundKey = "6f37a0fd2391cbcb";
 var inputUrl = "http://api.wunderground.com/api/" + wundergroundKey + "/geolookup/conditions/q/" + inputState + "/" + inputCity + ".json";
 jQuery(document).ready(function($) {
 
+console.log(inputUrl);
+
 	$.ajax({
 		url : inputUrl,
 		dataType : "jsonp",
@@ -30,7 +32,7 @@ jQuery(document).ready(function($) {
 			var location = cityWeather['location']['city'];
 			var currentWeather = cityWeather['current_observation']['weather'];
 			var tempFC = cityWeather['current_observation']['temperature_string'];
-			var feelsLike = cityWeather['current_observation']['fellslike_sting'];
+			var feelsLike = cityWeather['current_observation']['feelslike_string'];
 			var windData = cityWeather['current_observation']['wind_string'];
 					divMod.append($("<p>")
 					.append("The current conditions in " + location + ":" + theEnd)
