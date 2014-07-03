@@ -32,13 +32,13 @@ jQuery(document).ready(function($) {
 			var tempFC = cityWeather['current_observation']['temperature_string'];
 			var feelsLike = cityWeather['current_observation']['feelslike_string'];
 			var windData = cityWeather['current_observation']['wind_string'];
-					divMod.append($("<p>")
-					.append("The current conditions in " + location + ":" + theEnd)
-					.append("Weather: " + currentWeather + theEnd)
-					.append("Temperature: " + tempFC + theEnd)
-					.append("Feels like: " + feelsLike + theEnd)
-					.append('Wind: ' + windData)
-					)
+			divMod.append($("<p>")
+				.append("The current conditions in " + location + ":" + theEnd)
+				.append("Weather: " + currentWeather + theEnd)
+				.append("Temperature: " + tempFC + theEnd)
+				.append("Feels like: " + feelsLike + theEnd)
+				.append('Wind: ' + windData)
+				)
 		}
 	});
 });
