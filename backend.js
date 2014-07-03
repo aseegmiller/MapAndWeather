@@ -3,7 +3,7 @@
 $(document).on("click", "#submit", function(e){
 	e.preventDefault();
 	$("#streetview").empty();
-	$("#weather").empty();
+//	$("#weather").empty();
 
 	var inputStreet = $("#street").val();
 	var inputState = $("#state").val();
@@ -25,6 +25,12 @@ jQuery(document).ready(function($) {
 		url : inputUrl,
 		dataType : "jsonp",
 		success : function(cityWeather) {
+			var modTitleRow = $("#titlerow");
+			var modRowWeather = $("#rowweather");
+			var modRowTemp = $("#rowtemp");
+			var modRowFeelsLike = $("#rowfeelslike");
+			var modRowWind = $("#rowwind");
+
 			var divMod = $("#weather");
 			var theEnd = "</br>";
 			var location = cityWeather['location']['city'];
@@ -32,13 +38,38 @@ jQuery(document).ready(function($) {
 			var tempFC = cityWeather['current_observation']['temperature_string'];
 			var feelsLike = cityWeather['current_observation']['feelslike_string'];
 			var windData = cityWeather['current_observation']['wind_string'];
-			divMod.append($("<p>")
-				.append("The current conditions in " + location + ":" + theEnd)
-				.append("Weather: " + currentWeather + theEnd)
-				.append("Temperature: " + tempFC + theEnd)
-				.append("Feels like: " + feelsLike + theEnd)
-				.append('Wind: ' + windData)
-				)
+
+
+			modTitleRow.append($('<th>')
+				.text("The current conditions in "))
+			modTitleRow.append($('<th>')
+				.text(location))
+			modRowWeather.append($('<td>')
+				.text("Weather: "))
+			modRowWeather.append($('<td>')
+				.text(currentWeather))
+			modRowTemp.append($('<td>')
+				.text("Temperature: "))
+			modRowTemp.append($('<td>')
+				.text(tempFC))
+			modRowFeelsLike.append($('<td>')
+				.text("Feels like: "))
+			modRowFeelsLike.append($('<td>')
+				.text(feelsLike))
+			modRowWind.append($('<td>')
+				.text("Wind: "))
+			modRowWind.append($('<td>')
+				.text(windData))
+
+
+
+			// divMod.append($("<p>")
+			// 	.append("The current conditions in " + location + ":" + theEnd)
+			// 	.append("Weather: " + currentWeather + theEnd)
+			// 	.append("Temperature: " + tempFC + theEnd)
+			// 	.append("Feels like: " + feelsLike + theEnd)
+			// 	.append('Wind: ' + windData)
+			// 	)
 		}
 	});
 });
