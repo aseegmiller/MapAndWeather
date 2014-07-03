@@ -1,4 +1,4 @@
-$("#street").focus()
+$("#street").focus();
 
 //get submit and return
 $(document).on("click", "#submit", function(e){
