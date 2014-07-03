@@ -39,7 +39,6 @@ jQuery(document).ready(function($) {
 			var feelsLike = cityWeather['current_observation']['feelslike_string'];
 			var windData = cityWeather['current_observation']['wind_string'];
 
-
 			modTitleRow.append($('<th>')
 				.text("The current conditions in "))
 			modTitleRow.append($('<th>')
