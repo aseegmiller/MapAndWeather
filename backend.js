@@ -21,8 +21,6 @@ var wundergroundKey = "6f37a0fd2391cbcb";
 var inputUrl = "http://api.wunderground.com/api/" + wundergroundKey + "/geolookup/conditions/q/" + inputState + "/" + inputCity + ".json";
 jQuery(document).ready(function($) {
 
-console.log(inputUrl);
-
 	$.ajax({
 		url : inputUrl,
 		dataType : "jsonp",
