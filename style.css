@@ -8,14 +8,25 @@ h1 {
 }
 
 #streetview img {
-	max-width: 100%;
+	max-width: 
+	100%;
 	box-shadow: 10px 10px 5px #888888;
 }
 
 #weather {
 	height:400px;
 	padding: 25px;
-	max-width:100%;
-	display: inline;
 
 }
+
+#titlebox {
+	height: 6%;
+	width: 100%;
+	background-color: #f3f3f3;
+}
+
+#titlebox h1 {
+	margin-top: 0px;
+}
+
+
