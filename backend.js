@@ -2,6 +2,8 @@
 //get submit and return
 $(document).on("click", "#submit", function(e){
 	e.preventDefault();
+	$("#streetview").empty();
+	$("#weather").empty();
 
 	var inputStreet = $("#street").val();
 	var inputState = $("#state").val();
