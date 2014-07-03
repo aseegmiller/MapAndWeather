@@ -3,7 +3,11 @@
 $(document).on("click", "#submit", function(e){
 	e.preventDefault();
 	$("#streetview").empty();
-//	$("#weather").empty();
+	$("#titlerow").empty();
+	$("#rowtemp").empty();
+	$("#rowweather").empty();
+	$("#rowfeelslike").empty();
+	$("#rowwind").empty();
 
 	var inputStreet = $("#street").val();
 	var inputState = $("#state").val();
